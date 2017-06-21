@@ -18,10 +18,10 @@
 /* Begin PBXFileReference section */
 		A31C4BB11EF91AC70009E71D /* cameraKool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cameraKool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A31C4BB41EF91AC70009E71D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A31C4BB61EF91AC70009E71D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A31C4BB61EF91AC70009E71D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = cameraKool/ViewController.swift; sourceTree = "<group>"; };
 		A31C4BB91EF91AC70009E71D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A31C4BBC1EF91AC70009E71D /* cameraKool.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = cameraKool.xcdatamodel; sourceTree = "<group>"; };
-		A31C4BBE1EF91AC70009E71D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A31C4BBE1EF91AC70009E71D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = cameraKool/Assets.xcassets; sourceTree = "<group>"; };
 		A31C4BC11EF91AC70009E71D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A31C4BC31EF91AC70009E71D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -40,6 +40,10 @@
 		A31C4BA81EF91AC70009E71D = {
 			isa = PBXGroup;
 			children = (
+				A31C4BCC1EF91BA30009E71D /* Resources */,
+				A31C4BCB1EF91B8F0009E71D /* Model */,
+				A31C4BCA1EF91B890009E71D /* View */,
+				A31C4BC91EF91B780009E71D /* Controller */,
 				A31C4BB31EF91AC70009E71D /* cameraKool */,
 				A31C4BB21EF91AC70009E71D /* Products */,
 			);
@@ -57,14 +61,42 @@
 			isa = PBXGroup;
 			children = (
 				A31C4BB41EF91AC70009E71D /* AppDelegate.swift */,
-				A31C4BB61EF91AC70009E71D /* ViewController.swift */,
-				A31C4BB81EF91AC70009E71D /* Main.storyboard */,
-				A31C4BBE1EF91AC70009E71D /* Assets.xcassets */,
-				A31C4BC01EF91AC70009E71D /* LaunchScreen.storyboard */,
 				A31C4BC31EF91AC70009E71D /* Info.plist */,
-				A31C4BBB1EF91AC70009E71D /* cameraKool.xcdatamodeld */,
 			);
 			path = cameraKool;
+			sourceTree = "<group>";
+		};
+		A31C4BC91EF91B780009E71D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A31C4BB61EF91AC70009E71D /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A31C4BCA1EF91B890009E71D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A31C4BC01EF91AC70009E71D /* LaunchScreen.storyboard */,
+				A31C4BB81EF91AC70009E71D /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A31C4BCB1EF91B8F0009E71D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A31C4BCC1EF91BA30009E71D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A31C4BBB1EF91AC70009E71D /* cameraKool.xcdatamodeld */,
+				A31C4BBE1EF91AC70009E71D /* Assets.xcassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +186,7 @@
 				A31C4BB91EF91AC70009E71D /* Base */,
 			);
 			name = Main.storyboard;
+			path = cameraKool;
 			sourceTree = "<group>";
 		};
 		A31C4BC01EF91AC70009E71D /* LaunchScreen.storyboard */ = {
@@ -162,6 +195,7 @@
 				A31C4BC11EF91AC70009E71D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = cameraKool;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -315,7 +349,8 @@
 				A31C4BBC1EF91AC70009E71D /* cameraKool.xcdatamodel */,
 			);
 			currentVersion = A31C4BBC1EF91AC70009E71D /* cameraKool.xcdatamodel */;
-			path = cameraKool.xcdatamodeld;
+			name = cameraKool.xcdatamodeld;
+			path = cameraKool/cameraKool.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
