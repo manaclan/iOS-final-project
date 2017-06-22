@@ -48,6 +48,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzt-LO-MDC">
                                 <rect key="frame" x="0.0" y="502" width="375" height="30"/>
                                 <state key="normal" title="Open Photo Library"/>
+                                <connections>
+                                    <action selector="openPhotoLibraryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ADx-T3-CEf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -63,7 +66,13 @@
                             <constraint firstItem="Fzt-LO-MDC" firstAttribute="top" secondItem="xMW-C6-vec" secondAttribute="bottom" constant="10" id="whR-yi-ccu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="tzZ-3M-Ehv"/>
+                    <navigationItem key="navigationItem" id="tzZ-3M-Ehv">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="BHy-nW-y0I">
+                            <connections>
+                                <action selector="saveBtn:" destination="BYZ-38-t0r" id="AAA-kS-PZI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="imagePicked" destination="Vcx-K6-4HM" id="fWH-MF-m9H"/>
                     </connections>

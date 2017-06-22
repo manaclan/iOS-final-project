@@ -135,6 +135,7 @@
 				TargetAttributes = {
 					A31C4BB01EF91AC70009E71D = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XJ58377XB8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -304,6 +305,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XJ58377XB8;
+				"DEVELOPMENT_TEAM[sdk=*]" = XJ58377XB8;
 				INFOPLIST_FILE = cameraKool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = strong.cameraKool;
@@ -316,6 +319,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XJ58377XB8;
+				"DEVELOPMENT_TEAM[sdk=*]" = XJ58377XB8;
 				INFOPLIST_FILE = cameraKool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = strong.cameraKool;
