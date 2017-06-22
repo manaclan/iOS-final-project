@@ -40,10 +40,6 @@
 		A31C4BA81EF91AC70009E71D = {
 			isa = PBXGroup;
 			children = (
-				A31C4BCC1EF91BA30009E71D /* Resources */,
-				A31C4BCB1EF91B8F0009E71D /* Model */,
-				A31C4BCA1EF91B890009E71D /* View */,
-				A31C4BC91EF91B780009E71D /* Controller */,
 				A31C4BB31EF91AC70009E71D /* cameraKool */,
 				A31C4BB21EF91AC70009E71D /* Products */,
 			);
@@ -60,6 +56,10 @@
 		A31C4BB31EF91AC70009E71D /* cameraKool */ = {
 			isa = PBXGroup;
 			children = (
+				A31C4BCC1EF91BA30009E71D /* Resources */,
+				A31C4BCB1EF91B8F0009E71D /* Model */,
+				A31C4BCA1EF91B890009E71D /* View */,
+				A31C4BC91EF91B780009E71D /* Controller */,
 				A31C4BB41EF91AC70009E71D /* AppDelegate.swift */,
 				A31C4BC31EF91AC70009E71D /* Info.plist */,
 			);
@@ -72,6 +72,7 @@
 				A31C4BB61EF91AC70009E71D /* ViewController.swift */,
 			);
 			name = Controller;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		A31C4BCA1EF91B890009E71D /* View */ = {
@@ -81,6 +82,7 @@
 				A31C4BB81EF91AC70009E71D /* Main.storyboard */,
 			);
 			name = View;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		A31C4BCB1EF91B8F0009E71D /* Model */ = {
@@ -88,6 +90,7 @@
 			children = (
 			);
 			name = Model;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		A31C4BCC1EF91BA30009E71D /* Resources */ = {
@@ -97,6 +100,7 @@
 				A31C4BBE1EF91AC70009E71D /* Assets.xcassets */,
 			);
 			name = Resources;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +135,7 @@
 				TargetAttributes = {
 					A31C4BB01EF91AC70009E71D = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XJ58377XB8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -300,6 +305,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XJ58377XB8;
+				"DEVELOPMENT_TEAM[sdk=*]" = XJ58377XB8;
 				INFOPLIST_FILE = cameraKool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = strong.cameraKool;
@@ -312,6 +319,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XJ58377XB8;
+				"DEVELOPMENT_TEAM[sdk=*]" = XJ58377XB8;
 				INFOPLIST_FILE = cameraKool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = strong.cameraKool;
@@ -339,6 +348,7 @@
 				A31C4BC81EF91AC70009E71D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
