@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate,
+class ViewController: UIViewController,  UIImagePickerControllerDelegate,
 UINavigationControllerDelegate {
     // MARK: *** Data model
     // MARK: *** UI Elements
@@ -17,15 +17,6 @@ UINavigationControllerDelegate {
     // MARK: *** Local variables
     // MARK: *** UIViewController
     
-    @IBAction func openCameraButton(_ sender: Any) {
-            if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
-                let imagePicker = UIImagePickerController()
-                imagePicker.delegate = self
-                imagePicker.sourceType = UIImagePickerControllerSourceType.camera;
-                imagePicker.allowsEditing = false
-                self.present(imagePicker, animated: true, completion: nil)
-        }
-    }
     
     @IBAction func openPhotoLibraryButton(_ sender: Any) {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary) {
@@ -55,6 +46,7 @@ UINavigationControllerDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
