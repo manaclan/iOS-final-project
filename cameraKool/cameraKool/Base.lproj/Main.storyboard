@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2Vl-IP-YJp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -42,7 +42,7 @@
                                 <rect key="frame" x="0.0" y="462" width="375" height="30"/>
                                 <state key="normal" title="Open Camera"/>
                                 <connections>
-                                    <action selector="openCameraButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jvt-ch-tsC"/>
+                                    <segue destination="XaK-hh-RXE" kind="show" id="X5a-D3-eYL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzt-LO-MDC">
@@ -69,7 +69,7 @@
                     <navigationItem key="navigationItem" id="tzZ-3M-Ehv">
                         <barButtonItem key="rightBarButtonItem" title="Save" id="BHy-nW-y0I">
                             <connections>
-                                <action selector="saveBtn:" destination="BYZ-38-t0r" id="AAA-kS-PZI"/>
+                                <action selector="saveBtn:" destination="BYZ-38-t0r" id="7Xe-VY-apR"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -81,23 +81,23 @@
             </objects>
             <point key="canvasLocation" x="1056.8" y="122.78860569715144"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Cnm-uX-8W6">
+        <!--Camera View Controller-->
+        <scene sceneID="Afp-LQ-5kR">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Vl-IP-YJp" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rwF-PQ-Av0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="BoJ-e3-Kc9"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OSR-AU-bMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="XaK-hh-RXE" customClass="CameraViewController" customModule="cameraKool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dcw-EA-TXB"/>
+                        <viewControllerLayoutGuide type="bottom" id="0hg-uk-riM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Hb-mH-aXe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nEa-n2-1sO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+            <point key="canvasLocation" x="1903" y="83"/>
         </scene>
     </scenes>
 </document>
