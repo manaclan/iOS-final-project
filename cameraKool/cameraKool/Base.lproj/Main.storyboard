@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,39 +13,31 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="cameraKool" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GMX-vb-sM2">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" id="GMX-vb-sM2">
                                 <rect key="frame" x="0.0" y="57" width="375" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vcx-K6-4HM">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="Vcx-K6-4HM" secondAttribute="height" multiplier="1:1" id="Wh3-FL-X4c"/>
-                                        </constraints>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="Vcx-K6-4HM">
+                                        <rect key="frame" x="1.6666666666667425" y="3.3333333333333712" width="370" height="370"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="Vcx-K6-4HM" firstAttribute="top" secondItem="GMX-vb-sM2" secondAttribute="top" id="TDF-Py-5kU"/>
-                                    <constraint firstItem="Vcx-K6-4HM" firstAttribute="leading" secondItem="GMX-vb-sM2" secondAttribute="leading" id="Z84-3t-mqS"/>
-                                    <constraint firstAttribute="trailing" secondItem="Vcx-K6-4HM" secondAttribute="trailing" id="znz-dW-b23"/>
-                                </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMW-C6-vec">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xMW-C6-vec">
                                 <rect key="frame" x="0.0" y="462" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Open Camera"/>
                                 <connections>
-                                    <segue destination="XaK-hh-RXE" kind="show" id="X5a-D3-eYL"/>
+                                    <segue destination="XaK-hh-RXE" kind="modal" id="X5a-D3-eYL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzt-LO-MDC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Fzt-LO-MDC">
                                 <rect key="frame" x="0.0" y="502" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Open Photo Library"/>
                                 <connections>
                                     <action selector="openPhotoLibraryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ADx-T3-CEf"/>
@@ -54,17 +45,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="GMX-vb-sM2" secondAttribute="trailing" id="8Td-By-Snn"/>
-                            <constraint firstItem="GMX-vb-sM2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="H5h-V1-fN0"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GMX-vb-sM2" secondAttribute="bottom" constant="235" id="LCk-a7-qaJ"/>
-                            <constraint firstItem="Fzt-LO-MDC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TcB-JE-oKB"/>
-                            <constraint firstAttribute="trailing" secondItem="xMW-C6-vec" secondAttribute="trailing" id="gEg-3E-VwM"/>
-                            <constraint firstAttribute="trailing" secondItem="Fzt-LO-MDC" secondAttribute="trailing" id="kJr-Nm-XxX"/>
-                            <constraint firstItem="xMW-C6-vec" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="p0G-dF-3NM"/>
-                            <constraint firstItem="xMW-C6-vec" firstAttribute="top" secondItem="GMX-vb-sM2" secondAttribute="bottom" constant="30" id="rUz-7c-AZD"/>
-                            <constraint firstItem="Fzt-LO-MDC" firstAttribute="top" secondItem="xMW-C6-vec" secondAttribute="bottom" constant="10" id="whR-yi-ccu"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tzZ-3M-Ehv">
                         <barButtonItem key="rightBarButtonItem" title="Save" id="BHy-nW-y0I">
@@ -79,25 +59,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1056.8" y="122.78860569715144"/>
+            <point key="canvasLocation" x="660.5" y="136.5"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="Afp-LQ-5kR">
             <objects>
                 <viewController id="XaK-hh-RXE" customClass="CameraViewController" customModule="cameraKool" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dcw-EA-TXB"/>
-                        <viewControllerLayoutGuide type="bottom" id="0hg-uk-riM"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4Hb-mH-aXe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="modal" identifier="cancel" id="y2c-vF-gxn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nEa-n2-1sO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1903" y="83"/>
+            <point key="canvasLocation" x="1189.375" y="92.268333333333331"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
 </document>
