@@ -66,12 +66,24 @@ class VideoViewController: UIViewController {
         let cancelButton = UIButton(frame: CGRect(x: 10.0, y: 10.0, width: 30.0, height: 30.0))
         cancelButton.setImage(#imageLiteral(resourceName: "cancel"), for: UIControlState())
         cancelButton.addTarget(self, action: #selector(cancel), for: .touchUpInside)
+        
+        let saveButton = UIButton(frame: CGRect(x: view.frame.width - 40.0, y: 10.0, width: 30.0, height: 30.0))
+        saveButton.setImage(#imageLiteral(resourceName : "save") , for: UIControlState())
+        saveButton.addTarget(self, action: #selector(save), for: .touchUpInside)
+        
         view.addSubview(cancelButton)
+        view.addSubview(saveButton)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         player?.play()
+    }
+    
+    func save(){
+        let customPhotoAlbum = CustomPhotoAlbum.sharedInstance
+        customPhotoAlbum.save(videoURL: self.videoURL)
+        dismiss(animated: true, completion: nil)
     }
     
     func cancel() {

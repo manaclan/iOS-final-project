@@ -18,6 +18,7 @@
 		A321A4CA1EFE76FB00B61B55 /* SwiftyRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A321A4C91EFE76FB00B61B55 /* SwiftyRecordButton.swift */; };
 		A333C9181EFE7FEA00D6E4FB /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A333C9171EFE7FEA00D6E4FB /* PhotoViewController.swift */; };
 		A333C91A1EFE8BEE00D6E4FB /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A333C9191EFE8BEE00D6E4FB /* VideoViewController.swift */; };
+		A3B9F6DF1F014EBE00DCFA4E /* CustomPhotoAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B9F6DE1F014EBE00DCFA4E /* CustomPhotoAlbum.swift */; };
 		A3D1C3631EFE3681007352C1 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A3D1C3621EFE3681007352C1 /* Podfile */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		A321A4C91EFE76FB00B61B55 /* SwiftyRecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyRecordButton.swift; sourceTree = "<group>"; };
 		A333C9171EFE7FEA00D6E4FB /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		A333C9191EFE8BEE00D6E4FB /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		A3B9F6DE1F014EBE00DCFA4E /* CustomPhotoAlbum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPhotoAlbum.swift; sourceTree = "<group>"; };
 		A3D1C3621EFE3681007352C1 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		A4CAAB713F3E138B40EEEFC3 /* Pods-cameraKool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cameraKool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cameraKool/Pods-cameraKool.debug.xcconfig"; sourceTree = "<group>"; };
 		B1A3A56ACBEC2E0A4B694F7F /* Pods_cameraKool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cameraKool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +85,7 @@
 		A31C4BB31EF91AC70009E71D /* cameraKool */ = {
 			isa = PBXGroup;
 			children = (
+				A3DFDE0F1F04038A00907C84 /* Helper */,
 				A31C4BCC1EF91BA30009E71D /* Resources */,
 				A31C4BCB1EF91B8F0009E71D /* Model */,
 				A31C4BCA1EF91B890009E71D /* View */,
@@ -119,6 +122,7 @@
 		A31C4BCB1EF91B8F0009E71D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A3B9F6DE1F014EBE00DCFA4E /* CustomPhotoAlbum.swift */,
 			);
 			name = Model;
 			path = ..;
@@ -132,6 +136,13 @@
 			);
 			name = Resources;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		A3DFDE0F1F04038A00907C84 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 		FFC092111E2128D68BE492C4 /* Frameworks */ = {
@@ -274,6 +285,7 @@
 				A31C4BB51EF91AC70009E71D /* AppDelegate.swift in Sources */,
 				A31C4BBD1EF91AC70009E71D /* cameraKool.xcdatamodeld in Sources */,
 				A333C9181EFE7FEA00D6E4FB /* PhotoViewController.swift in Sources */,
+				A3B9F6DF1F014EBE00DCFA4E /* CustomPhotoAlbum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

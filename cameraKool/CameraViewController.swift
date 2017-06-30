@@ -44,6 +44,18 @@ class CameraViewController: SwiftyCamViewController, SwiftyCamViewControllerDele
         flashButton.addTarget(self, action: #selector(toggleFlashAction(_:)), for: .touchUpInside)
         self.view.addSubview(flashButton)
     }
+    
+    func  createCancelBtn(){
+        let cancelButton = UIButton(frame: CGRect(x: 10.0, y: 10.0, width: 30.0, height: 30.0))
+        cancelButton.setImage(#imageLiteral(resourceName: "cancel"), for: UIControlState())
+        cancelButton.addTarget(self, action: #selector(cancel), for: .touchUpInside)
+        self.view.addSubview(cancelButton)
+    }
+    
+    func cancel(){
+        performSegue(withIdentifier: "cancel", sender: self)
+    }
+    
     func swiftyCam(_ swiftyCam: SwiftyCamViewController, didTake photo: UIImage) {
         let newVC = PhotoViewController(image: photo)
         self.present(newVC, animated: true, completion: nil)
@@ -124,7 +136,7 @@ class CameraViewController: SwiftyCamViewController, SwiftyCamViewControllerDele
         createPhotoCaptureBtn()
         createFlipCameraBtn()
         createFlashBtn()
-        
+        createCancelBtn()
        
         // Do any additional setup after loading the view.
     }
